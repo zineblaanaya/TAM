@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+body{
+    font-family:'Lato', sans-serif;
+    background-color: #141414;
+    padding: 0;
+    margin:0;
+    color: white;
+}
+
+body .page{
+    margin: 20px 80px;
+
+}
+
+/* Barre de navigation */
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+    background-color: #141414;
+    padding: 10px 0;
+}
+
+nav .onglets{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+nav .onglets a{
+margin-right: 20px;
+cursor: pointer;
+}
+
+nav .buttons button{
+    padding: 13px 20px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+nav .buttons .login{
+    background-color: inherit;
+    margin-right:10px ;
+    color: #8f8f8f;
+}
+
+nav .buttons .register{
+    background-color: #f54266;
+    margin-right:10px ;
+    color: #8f8f8f;
+    color: white;
+}
+
+
+/* Fin de la barre de navigation */
+
+
+/* Partie header*/
+
+header{
+    margin-top: 40px;
+    background:url(./image\ terre.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px 400px;
+}
+
+header h1{
+    text-align: center;
+    font-size: 90px;
+    padding: 150px;
+    font-weight:lighter;
+}
+
+/* Fin de la partie header*/
+
+/* Pied de page */
+
+footer{
+    background-color: #1a1a1a;
+    padding: 25px 100px;
+    color:#828282;
+  }
+  footer .colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  /* Fin du pied de page */
+  
+  
