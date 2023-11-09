@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* 
+*: Cela sélectionne tous les éléments HTML sur la page.
+margin: 0;: Cela définit la marge extérieure de tous les éléments à zéro. La marge est l'espace entre les bords de l'élément et les éléments adjacents.
+padding: 0;: Cela définit le rembourrage (padding) de tous les éléments à zéro. Le rembourrage est l'espace entre le contenu de l'élément et ses bords.
+box-sizing: border-box;: Cette règle définit la manière dont la largeur et la hauteur d'un élément sont calculées. Avec box-sizing: border-box;, la largeur et la hauteur de l'élément incluent le contenu, la bordure et le remplissage, mais pas la marge extérieure. Cela permet de dimensionner les éléments de manière plus prévisible.
+En combinant ces règles, on s'assure que tous les éléments de la page n'ont pas de marges, pas de rembourrage, et que leur dimension est calculée de manière plus intuitive grâce à box-sizing: border-box; */
+
+body{
+  font-family: 'Playfair Display', serif;
+  background: url(./assets/images/background.jpg); 
+  color: white;
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 100vw;
+  background-size:cover;
+  background-position: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+    padding: 10px;
+    width: 30%;
+    height: 50%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px white;
+}
+
+form input{
+  
+   background:transparent;
+   border: white 1px solid;
+   border-radius: 15px;
+   width: 20vw;
+   height: 35px;
+}
+
+input::placeholder{
+    color: white;
+    text-align: center;
+}
+
+ .btn-submit{
+        background-color: #552fff; 
+        max-width:25vw ;
+        border: solid 0.5px white;/* Exemple de couleur personnalisée */
+        color: white;
+        padding: 10px 20px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 16px;
+}
+
+
+
+
+
