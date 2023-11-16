@@ -1,11 +1,13 @@
 const express = require('express');
 const app = express();
 const routes = require("./routes/route")
+const db = require ("./db/db")
+const port = 1415;
 
 app.use(routes)
 
 
-const port = 1415;
+db();
 
 //Etape 3 : Définition d'une route 
 app.get('/', (req, res) => {
