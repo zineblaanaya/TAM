@@ -4,10 +4,11 @@ const routes = require("./routes/route")
 const db = require ("./db/db")
 const port = 1415;
 
-app.use(routes)
-
-
 db();
+
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
+
 
 //Etape 3 : Définition d'une route 
 app.get('/', (req, res) => {
@@ -17,3 +18,5 @@ app.get('/', (req, res) => {
   app.listen(port, () => {
     console.log(`All Good port ${port}`)
   })
+
+  app.use(routes)
